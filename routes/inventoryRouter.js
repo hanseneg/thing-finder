@@ -38,6 +38,7 @@ inventoryRouter.route('/')
     .get((req, res) => {
         res.send(inventory)
     })
+    //post a new item
     .post((req, res) => {
         const newInventory = req.body
         inventory.push(newInventory)
